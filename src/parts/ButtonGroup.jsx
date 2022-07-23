@@ -1,4 +1,5 @@
 import React from 'react';
+
 import PropTypes from 'prop-types';
 
 function ButtonGroup({ children, spacing = 2, direction = "row", wrap = false}) {
@@ -10,3 +11,11 @@ function ButtonGroup({ children, spacing = 2, direction = "row", wrap = false}) 
     }
     return <div style={style}>{children}</div>
 }
+
+ButtonGroup.propTypes = {
+    spacing: PropTypes.number,
+    wrap: PropTypes.bool,
+    direction: PropTypes.oneOf(["horizontal", "vertical"]),
+}
+
+export default ButtonGroup
