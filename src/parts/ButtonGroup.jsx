@@ -15,7 +15,7 @@ function ButtonGroup({ children, spacing = 2, direction = "row", wrap = false}) 
 ButtonGroup.propTypes = {
     spacing: PropTypes.number,
     wrap: PropTypes.bool,
-    direction: PropTypes.oneOf(["horizontal", "vertical"]),
+    direction: PropTypes.oneOf(["row", "column"]),
 }
 
 export default ButtonGroup
